@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+
+
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="brand-logo">
+        <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo" />
+      </div>
+      <div class="dropdown">
+        <button class="megadropbtn">
+          Company Tools
+          <i class="fa fa-angle-down"></i>
+        </button>
+        <div class="mega-dropdown-content">
+          <div class="row">
+            <div class="column">
+              <h3>Core Tools</h3>
+              <a href="#">Alters</a>
+              <a href="#">Company</a>
+              <a href="#">Sub Company</a>
+            </div>
+            <div class="column">
+              <h3>Projects</h3>
+              <a href="#">Project A</a>
+              <a href="#">Project B</a>
+            </div>
+            <div class="column">
+              <h3>User Management</h3>
+              <a href="#">User</a>
+              <a href="#">Company Details</a>
+              <a href="#">User Time Off</a>
+              <a href="#">User Role Setting</a>
+            </div>
+            <div class="column">
+              <h3>Master</h3>
+              <a href="#">Country</a>
+              <a href="#">State</a>
+              <a href="#">City</a>
+              <a href="#">Leave Category</a>
+              <a href="#">Job Site State</a>
+              <a href="#">Alert Type</a>
+              <a href="#">Bid Type</a>
+              <a href="#">Project Type</a>
+              <a href="#">Lead Source</a>
+              <a href="#">Change Order Reason</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add the search bar next to the dropdown -->
+      <div class="nav-search">
+        <i class="fas fa-search"></i>
+        <input type="search" id="search" placeholder="Search" />
+      </div>
+
+      <!-- Add the icons and user profile dropdown -->
+      <div class="nav-items">
+        <img src="images/image-removebg-preview (6) 1.png" alt="USA Flag" class="flag" />
+        <i class="fas fa-moon"></i>
+        <div class="user-dropdown">
+          <button class="user-button" onclick="toggleDropdown()">
+            <img src="images/image 11.png" alt="User" class="user" />
+          </button>
+          <div class="dropdown-content" id="userDropdownMenu">
+            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+            <a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Log Out</a>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <script src="js/scripts.js"></script>
+
+  <script>
+    function toggleDropdown() {
+      var dropdown = document.getElementById("userDropdownMenu");
+      dropdown.classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener('click', function (event) {
+      if (!event.target.matches('.user-button, .user-button *')) {
+        var dropdowns = document.getElementsByClassName('dropdown-content');
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

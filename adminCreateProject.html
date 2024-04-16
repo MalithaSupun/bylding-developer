@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- This script got from frontendfreecode.com -->
+    <title>Admin Create Project</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="css/adminCreateProject.css">
+    <link rel="stylesheet" href="css/createPrimeContract.css" />
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default no-margin">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header fixed-brand">
+            <div class="brand-logo">
+                <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo" />
+            </div>
+        </div>
+        <!-- navbar-header-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <button id="menu-toggle-2" data-toggle="collapse">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Add the icons and user profile dropdown -->
+            <div class="nav-items">
+                <img src="images/image-removebg-preview (6) 1.png" alt="USA Flag" class="flag" />
+                <i class="fas fa-moon"></i>
+                <div class="user-dropdown">
+                    <button class="user-button" onclick="toggleDropdown('userDropdownMenu')">
+                        <img src="images/image 11.png" alt="User" class="user" />
+                    </button>
+                    <div class="dropdown-content" id="userDropdownMenu">
+                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                        <a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- bs-example-navbar-collapse-1 -->
+    </nav>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
+                <li class="active">
+                    <a href="#"><span class="fa-stack fa-lg pull-left"> <i
+                        class="fa fa-cart-plus fa-stack-1x "></i>
+                        </span> Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                        class="fa fa-cart-plus fa-stack-1x ">
+                    </i></span>Company</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                        class="fa fa-cart-plus fa-stack-1x "></i>
+                    </span>Logs</a>
+                </li>
+                <li>
+                    <a href="#"> <span class="fa-stack fa-lg pull-left"><i
+                        class="fa fa-cart-plus fa-stack-1x "></i></span>Master</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                        class="fa fa-cart-plus fa-stack-1x "></i></span>Resources</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                        class="fa fa-cart-plus fa-stack-1x "></i></span>Setting</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                        class="fa fa-cart-plus fa-stack-1x "></i></span>Sub Company</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                        class="fa fa-cart-plus fa-stack-1x "></i></span>User Management</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i
+                        class="fa fa-cart-plus fa-stack-1x "></i></span>Utilities</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid xyz">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Welcome James</h1>
+                        <p>All systems are running smoothly! You have 3 unread alerts!</p>
+                    </div>
+                </div>
+
+                <div class="project-search-section">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="search" id="searchProjects" placeholder="Search Projects">
+                    </div>
+                    <div class="project-view">
+                        <button class="btn-create-project">+ Create Project</button>
+                    </div>
+                    <div class="menu-icons">
+                        <ul>
+                            <li>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-th-large" aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="table-controls">
+                    <div class="entries-info">Showing 1 to 1 of 1 entries</div>
+                    <div class="table-pagination">
+                        <a href="#">&lt;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <span>...</span>
+                        <a href="#">12</a>
+                        <a href="#">&gt;</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/image 16.png" alt="Logo" class="card-logo">
+                    <div class="card-info">
+                        <h4 class="card-title">24-0002</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="card-location">United States</p>
+                        <button class="card-status inactive">Inactive</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/image 17.png" alt="Logo" class="card-logo">
+                    <div class="card-info">
+                        <h4 class="card-title">24-0002</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="card-location">United States</p>
+                        <button class="card-status inactive">Inactive</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/image 19.png" alt="Logo" class="card-logo">
+                    <div class="card-info">
+                        <h4 class="card-title">24-0002</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="card-location">United States</p>
+                        <button class="card-status inactive">Inactive</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/image 21.png" alt="Logo" class="card-logo">
+                    <div class="card-info">
+                        <h4 class="card-title">24-0002</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="card-location">United States</p>
+                        <button class="card-status inactive">Inactive</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/image 16.png" alt="Logo" class="card-logo">
+                    <div class="card-info">
+                        <h4 class="card-title">24-0002</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="card-location">United States</p>
+                        <button class="card-status inactive">Inactive</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/image 17.png" alt="Logo" class="card-logo">
+                    <div class="card-info">
+                        <h4 class="card-title">24-0002</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="card-location">United States</p>
+                        <button class="card-status inactive">Inactive</button>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <script>
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById(id);
+            dropdown.classList.toggle("show");
+        }
+
+        // To prevent dropdowns from closing immediately when they are opened
+        window.onclick = function (event) {
+            if (!event.target.matches('.user-button, .user-button *') &&
+                !event.target.matches('.dropbtn, .dropbtn *')) {
+                var dropdowns = document.getElementsByClassName('dropdown-content');
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+        $("#menu-toggle-2").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled-2");
+            $('#menu ul').hide();
+        });
+
+        function initMenu() {
+            $('#menu ul').hide();
+            $('#menu ul').children('.current').parent().show();
+            //$('#menu ul:first').show();
+            $('#menu li a').click(
+                function () {
+                    var checkElement = $(this).next();
+                    if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+                        return false;
+                    }
+                    if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+                        $('#menu ul:visible').slideUp('normal');
+                        checkElement.slideDown('normal');
+                        return false;
+                    }
+                }
+            );
+        }
+        $(document).ready(function () {
+            initMenu();
+        });
+    </script>
+
+</body>
+
+</html>

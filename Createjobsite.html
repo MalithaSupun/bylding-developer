@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Job Site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Createjobsite.css">
+</head>
+<body>
+    
+  <header>
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="brand-logo">
+          <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo">
+        </div>
+        <ul class="nav-menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link" id="menu-link">Company Tools</a>
+            <i class="fa fa-angle-down" aria-hidden="true" id="fa fa-angle-down"></i>
+            <div class="dropdown">
+              <div class="dropdown-section">
+                <a href="#" class="main-topic">Core Tools</a>
+                <div class="subtopics">
+                  <a href="#">Alters</a>
+                  <a href="#">Company</a>
+                  <a href="#">Sub Company</a>
+                </div>
+              </div>
+              <div class="dropdown-section">
+                <a href="#" class="main-topic">Projects</a>
+                <div class="subtopics">
+                  <a href="#">Project A</a>
+                  <a href="#">Project B</a>
+                </div>
+              </div>
+              <div class="dropdown-section">
+                <a href="#" class="main-topic">User Management</a>
+                <div class="subtopics">
+                  <a href="#">User</a>
+                  <a href="#">Company Details</a>
+                  <a href="#">User Time Off</a>
+                  <a href="#">User Role Setting</a>
+                </div>
+              </div>
+              <div class="dropdown-section">
+                <a href="#" class="main-topic">Master</a>
+                <div class="subtopics">
+                  <a href="#">Country</a>
+                  <a href="#">State</a>
+                  <a href="#">City</a>
+                  <a href="#">Leave Category</a>
+                  <a href="#">Job Site State</a>
+                  <a href="#">Alert Type</a>
+                  <a href="#">Bid Type</a>
+                  <a href="#">Project Type</a>
+                  <a href="#">Lead Source</a>
+                  <a href="#">Change Order Reason</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="nav-search">
+          <i class="fas fa-search"></i>
+          <input type="search" id="search" placeholder="Search">
+        </div>
+        <div class="nav-items">
+          <img src="images/image-removebg-preview (6) 1.png" alt="USA Flag" class="flag">
+          <i class="fas fa-moon"></i>
+          <!-- User Profile Dropdown -->
+          <img src="images/image 11.png" alt="User" class="user" onclick="toggleProfileDropdown()">
+          <div id="profileDropdown" class="user-dropdown">
+          <a href="#"><i class="fas fa-circle-user"></i>
+          Profile</a>
+          <a href="#"><i class="fas fa-arrow-right"></i><i class="fas fa-bracket-right"></i>Logout</a>
+        </div>
+        <!-- end of User Profile Dropdown -->
+
+
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Second section (Submenu) -->
+  <div class="submenu">
+    <div class="submenu-container">
+
+      <div class="submenu-title">
+        <span>PROJECT 001</span>
+      </div>
+
+      <ul class="submenu-list">
+        <li><a href="projectsNew.html" class="projects-link">Project List</a></li>
+        <li><a href="#" class="jobs-link" id="jobs-link">Job Site</a></li>
+      </ul>
+
+
+
+  </div>
+
+  <div class="export-dropdown">
+    <button class="export-button">Export <span class="export-icon">&#9660;</span></button>
+    <div class="export-menu">
+        <button class="export-option" onclick="exportFile('psd')">PSD</button>
+        <button class="export-option" onclick="exportFile('csv')">CSV</button>
+    </div>
+</div>
+  
+  </div>
+
+
+    <div class="containers mt-3 ee">
+        <h2 id="titlemain">Create Job Site</h2>
+    
+        
+
+        <div class="maincontaininputs" id="maincontaininputs">
+
+            <form id="companyForm">
+
+                <div class="row">
+                  <!-- Left Column -->
+                  <div class="col-md-6">
+                    <!-- Job Site Name -->
+                    <div class="mb-3">
+                      <label for="JobSiteName" class="form-label">Job Site Name</label>
+                      <input type="text" class="form-control" id="JobSiteName" name="JobSiteName" required>
+                    </div>
+              
+                    <!-- Primary Address -->
+                    <div class="mb-3">
+                      <label for="PrimaryAddress" class="form-label">Primary Address</label>
+                      <input type="text" class="form-control" id="PrimaryAddress" name="PrimaryAddress" required>
+                    </div>
+              
+                    <!-- Longitude  -->
+                    <div class="mb-3">
+                      <label for="Longitude" class="form-label">Longitude</label>
+                      <input type="text" class="form-control" id="Longitude" name="Longitude" required>
+                    </div>
+              
+                    <!-- Country  -->
+                    <div class="mb-3">
+                      <label for="Country" class="form-label">Country</label>
+                      <input type="text" class="form-control" id="Country" name="Country" required>
+                    </div>
+              
+                    <!-- City -->
+                    <div class="mb-3">
+                      <label for="City" class="form-label">City</label>
+                      <input type="text" class="form-control" id="City" name="City" required>
+                    </div>
+              
+                    <!-- QR Code -->
+                    <div class="mb-3">
+                      <label for="QRCode" class="form-label">QR Code</label>
+                      <input type="text" class="form-control" id="QRCode" name="QRCode" required>
+                    </div>
+                  </div>
+
+              
+                  <!-- Right Column -->
+                  <div class="col-md-6 colright">
+                    <!-- Job Site Address  -->
+                    <div class="mb-3">
+                      <label for="JobSiteAddress" class="form-label">Job Site Address</label>
+                      <input type="text" class="form-control" id="JobSiteAddress" name="JobSiteAddress" required>
+                    </div>
+              
+                    <!-- Latitude -->
+                    <div class="mb-3">
+                      <label for="Latitude" class="form-label">Latitude</label>
+                      <input type="text" class="form-control" id="Latitude" name="Latitude" required>
+                    </div>
+              
+                    <!-- Job Site Code -->
+                    <div class="mb-3">
+                      <label for="JobSiteCode" class="form-label">Job Site Code</label>
+                      <input type="text" class="form-control" id="JobSiteCode" name="JobSiteCode">
+                    </div>
+              
+                    <!-- State -->
+                    <div class="mb-3">
+                      <label for="State" class="form-label">State</label>
+                      <input type="text" class="form-control" id="State" name="State">
+                    </div>
+              
+                    <!-- Zip Code -->
+                    <div class="mb-3">
+                      <label for="ZipCode" class="form-label">Zip Code</label>
+                      <input type="text" class="form-control" id="ZipCode" name="ZipCode" required>
+                    </div>
+
+                    <!-- Primary Supervisor -->
+                    <div class="mb-3">
+                      <label for="PrimarySupervisor" class="form-label">Primary Supervisor</label>
+                      <input type="text" class="form-control" id="PrimarySupervisor" name="Primary Supervisor">
+                    </div>
+
+                  </div>
+                </div>
+              
+              </form>
+              
+          
+        </div>
+
+        <!--  -->
+        <div class="d-flex justify-content-end mt-3">
+            <button type="button" class="btn btn-secondary me-2" id="btnCancel">Cancel</button>
+            <button type="submit" class="btn btn-primary" >Add</button>
+          </div>
+
+    </div>
+    <!-- dropdown js -->
+    <script>
+      // Get the export button and menu elements
+const exportButton = document.querySelector('.export-button');
+const exportMenu = document.querySelector('.export-menu');
+
+// Toggle the export menu when the button is clicked
+exportButton.addEventListener('click', () => {
+    const exportDropdown = exportButton.parentNode;
+    exportDropdown.classList.toggle('show');
+});
+
+// Close the export menu when clicking outside the dropdown
+window.addEventListener('click', (event) => {
+    if (!event.target.closest('.export-dropdown')) {
+        const exportDropdowns = document.querySelectorAll('.export-dropdown');
+        exportDropdowns.forEach((dropdown) => {
+            dropdown.classList.remove('show');
+        });
+    }
+});
+
+// Handle exporting the file
+function exportFile(fileType) {
+    if (fileType === 'psd') {
+        console.log('Exporting as PSD');
+        // Implement your export to PSD functionality here
+    } else if (fileType === 'csv') {
+        console.log('Exporting as CSV');
+        // Implement your export to CSV functionality here
+    }
+}
+
+    </script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>

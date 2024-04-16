@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Prime Contract</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/createPrimeContract.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="brand-logo">
+                <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo" />
+            </div>
+            <div class="dropdown">
+                <button class="megadropbtn">
+                    Project Tools
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="mega-dropdown-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3>Core Tools</h3>
+                            <a href="#">Home</a>
+                        </div>
+                        <div class="column">
+                            <h3>Projects Management</h3>
+                            <a href="#">RFI</a>
+                            <a href="#">Submittals</a>
+                            <a href="#">Transmittals</a>
+                            <a href="#">Meetings</a>
+                            <a href="#">Incidents</a>
+                            <a href="#">Punch List</a>
+                            <a href="#">Daily Log</a>
+                            <a href="#">Bidding</a>
+
+                        </div>
+                        <div class="column">
+                            <h3>Financial Management</h3>
+                            <a href="#">Prime Contact</a>
+                            <a href="#">Prime Contact SOV</a>
+                            <a href="#">Schedule</a>
+                            <a href="#">Sub-Contacts</a>
+                            <a href="#">Budget</a>
+                            <a href="#">Change Order</a>
+                            <a href="#">Invoices</a>
+                            <a href="#">Payments</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add the search bar next to the dropdown -->
+            <div class="nav-search">
+                <i class="fas fa-search"></i>
+                <input type="search" id="search" placeholder="Search" />
+            </div>
+
+            <!-- Add the icons and user profile dropdown -->
+            <div class="nav-items">
+                <img src="images/image-removebg-preview (6) 1.png" alt="USA Flag" class="flag" />
+                <i class="fas fa-moon"></i>
+                <div class="user-dropdown">
+                    <button class="user-button" onclick="toggleDropdown('userDropdownMenu')">
+                        <img src="images/image 11.png" alt="User" class="user" />
+                    </button>
+                    <div class="dropdown-content" id="userDropdownMenu">
+                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                        <a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Log Out</a>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <!-- Second section (Submenu) -->
+    <div class="submenu">
+        <div class="submenu-container">
+            <!-- PROJECTS title -->
+            <div class="submenu-title">
+                <span>PROJECT 001</span>
+            </div>
+
+            <ul class="submenu-list">
+                <li><a href="#" class="projects-link">Prime Contract</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="containers mt-3 ee">
+        <h2 id="titlemain">Create Prime Contract</h2>
+
+        <div class="project-search-section">
+            <div class="search-box">
+                <i class="fas fa-search search-icon"></i>
+                <input type="search" id="searchProjects" placeholder="Search Projects">
+            </div>
+            <div class="project-view">
+                <button class="btn-create-project">+ Create Project</button>
+            </div>
+            <div class="menu-icons">
+                <ul>
+                    <li>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-th-large" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="table-controls">
+            <div class="entries-info">Show</div>
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <div class="entries-info">entries</div>
+            <div class="table-pagination">
+                <a href="#">&lt;</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <span>...</span>
+                <a href="#">12</a>
+                <a href="#">&gt;</a>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Latitude</th>
+                    <th scope="col">Longitude</th>
+                    <th scope="col">QR Code</th>
+                    <th scope="col">Stage</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Created Date</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>Download QR <br>code</td>
+                    <td>test</td>
+                    <td>Active</td>
+                    <td>2024/03/12</td>
+                    <td>
+                        <i class="fas fa-edit" style="margin-right: 10px;"></i>
+                        <i class="fas fa-print"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>Download QR <br>code</td>
+                    <td>test</td>
+                    <td>Active</td>
+                    <td>2024/03/12</td>
+                    <td>
+                        <i class="fas fa-edit" style="margin-right: 10px;"></i>
+                        <i class="fas fa-print"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>Download QR <br>code</td>
+                    <td>test</td>
+                    <td>Active</td>
+                    <td>2024/03/12</td>
+                    <td>
+                        <i class="fas fa-edit" style="margin-right: 10px;"></i>
+                        <i class="fas fa-print"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>Download QR <br>code</td>
+                    <td>test</td>
+                    <td>Active</td>
+                    <td>2024/03/12</td>
+                    <td>
+                        <i class="fas fa-edit" style="margin-right: 10px;"></i>
+                        <i class="fas fa-print"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+        <script>
+            function toggleDropdown(id) {
+                var dropdown = document.getElementById(id);
+                dropdown.classList.toggle("show");
+            }
+
+            // To prevent dropdowns from closing immediately when they are opened
+            window.onclick = function (event) {
+                if (!event.target.matches('.user-button, .user-button *') &&
+                    !event.target.matches('.dropbtn, .dropbtn *')) {
+                    var dropdowns = document.getElementsByClassName('dropdown-content');
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+</body>
+
+</html>

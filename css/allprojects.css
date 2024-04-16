@@ -1,0 +1,1847 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    /* overflow: hidden; */
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.brand-logo {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 18px;
+    margin-right: 25px;
+    vertical-align: middle;
+}
+
+.dropdown {
+    /* overflow: hidden; */
+    display: inline-block;
+
+}
+
+.dropdown .megadropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.fa-angle-down {
+    color: #000000;
+    padding-left: 10px;
+    align-self: center;
+    font-size: 1rem;
+}
+
+
+.mega-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0067B3;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown:hover .mega-dropdown-content {
+    display: block;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: auto;
+}
+
+.column a {
+    float: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.column h3 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.column h3::after {
+    content: '';
+    display: block;
+    width: 255px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Search Bar */
+.nav-search {
+    position: relative;
+    margin-right: 50px;
+    margin-left: 450px;
+}
+
+.nav-search input {
+    padding-left: 30px;
+    border: 2px solid #DFDEE0;
+    border-radius: 4px;
+    height: 35px;
+    width: 280px;
+    background-color: #DFDEE0;
+    color: rgba(0, 0, 0, 0.42);
+    font-size: 14px;
+    outline: none;
+}
+
+.nav-search .fa-search {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.42);
+    font-size: 13px;
+    pointer-events: none;
+}
+
+/*Nav-Items*/
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+}
+
+
+.nav-items img.flag,
+.nav-items i.fas.fa-moon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.nav-items img.user {
+    width: 50px;
+    height: 50px;
+    background: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 50%;
+    display: block;
+}
+
+.user-button {
+    background: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-dropdown img {
+    display: block;
+    /* Ensure it's not inline which could cause horizontal alignment */
+    width: auto;
+    /* Adjust width as needed */
+    height: auto;
+    /* Adjust height as needed */
+    margin: auto;
+    /* Center it if that's desired */
+
+}
+
+.nav-items i.fas.fa-moon {
+    padding-top: 4px;
+    font-size: 25px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1 !important;
+    right: 0;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+/* Submenu styles */
+.submenu {
+    background-color: #0000A3;
+    display: flex;
+    justify-content: center;
+    line-height: 60px;
+    margin: 0;
+    border: 1px solid rgba(34, 34, 34, 0.3);
+}
+
+.submenu-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.submenu-title span {
+    font-size: 24px;
+    color: #f8f8f8;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.submenu-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu-list li {
+    padding: 0 20px;
+}
+
+.submenu-list .projects-link {
+    color: #ffffff;
+}
+
+.submenu-list .jobs-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.submenu-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.submenu-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.submenu-actions button {
+    padding: 10px 20px;
+    background-color: #0000A3;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #cacaca9f;
+}
+
+.submenu-actions .fa-angle-down {
+    color: #ffffff;
+    padding-left: 10px;
+    align-self: center;
+    font-size: 1 rem;
+}
+
+.submenu-actions button:hover {
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropbtn:hover {
+    background-color: initial;
+}
+
+.show {
+    display: block;
+}
+
+/* Third section: Search Projects */
+.project-search-section {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    z-index: 0;
+}
+
+#searchProjects {
+    padding: 10px 10px 10px 35px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the 'Create Project' button */
+.btn-create-project {
+    background-color: #062284;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the button */
+.btn-create-project:hover {
+    background-color: #00397a;
+}
+
+.edit-btn {
+    background-color: #062284;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-btn:hover {
+    background-color: #00397a;
+}
+
+
+
+/* Fourth section: Table Controls */
+.table-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.table-pagination a {
+    text-decoration: none;
+    margin: 0 4px;
+    color: #333;
+}
+
+/* Add custom styling for the current page number if needed */
+.table-pagination a.current {
+    font-weight: bold;
+    color: #000;
+}
+
+.table-controls span {
+    margin: 0 8px;
+}
+
+/* fifth section */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    background: #FFF;
+    border: 1px solid rgba(34, 34, 34, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-basis: calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    position: relative;
+}
+
+.card-max-width {
+    background: #FFF;
+    border: 1px solid rgba(34, 34, 34, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    /* max-width: calc(80%); */
+    position: relative;
+}
+
+
+.card-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 200px;
+    border-right: 2px solid #DDD;
+
+}
+
+.card-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 100;
+}
+
+.card-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.card-location {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.card-status {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.card-status.inactive {
+    background-color: rgba(170, 6, 6, 0.7);
+}
+
+.card-status.active {
+    background-color: rgba(10, 136, 23, 0.66);
+}
+
+/*button dropdown*/
+
+.dropbtn {
+    color: 062284;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.submenu-actions {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    /* color: #33363F; */
+    padding: 2px 2px 20px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-actions a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.project-search-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.menu-icons {
+    font-size: 30px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.menu-icons ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.menu-icons li {
+    margin-right: 20px;
+}
+
+.menu-icons li:last-child {
+    margin-right: 0;
+}
+
+.menu-icons i {
+    font-size: 24px;
+    color: #062284;
+
+}
+
+/* Responsive design starts here */
+
+/* Mobile Devices - Small Phones */
+@media only screen and (max-width: 321px) {
+  
+  .submenu-container {
+    justify-content: space-between; /* Adjust the space between elements */
+    padding: 0 20px !important; 
+    }
+  
+  .submenu-title {
+    margin-right: 40px; /* Add some space to the right of the title */
+    }
+  
+  .submenu-title span {
+    font-size: 12px; /* Reduce font size */
+    padding-right: 0; 
+    }
+  
+  .submenu-list {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure list uses the full width */
+    }
+  
+  .submenu-list li {
+    padding: 0 5px; /* Reduce padding between list items */
+    flex: 1; /* Allow the list to fill the available space */
+    justify-content: space-between; /* Space out the links if there's room */
+    }
+  
+  .submenu-list li a {
+    font-size: 12px; /* Reduce font size */
+    white-space: nowrap; /* Prevent text wrapping */
+    }
+  
+  .submenu-actions {
+    padding: 0; /* Remove padding */
+    }
+  
+  .submenu-actions button {
+    font-size: 12px; /* Reduce font size */
+    padding: 5px; /* Reduce padding */
+    margin: 0; /* Remove margin */
+    white-space: nowrap; /* Prevent text wrapping */
+    }
+  
+  .submenu-actions .fa-angle-down {
+    padding-left: 5px; /* Reduce space after text */
+    font-size: 0.7rem; /* Reduce icon size */
+    }
+  
+  .projects-link {
+    display: inline-block; /* Or 'block', depending on your design */
+    min-width: 50px; /* Adjust as needed */
+    text-align: center; /* Center the text if there's space */
+    margin-right: 10px; /* Ensure some space on the right */
+    }
+  
+    .project-search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 5px; 
+    }
+  
+  .search-box {
+    flex-grow: 1; 
+    margin-top: 0; 
+    margin-right: 5px; 
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 10px 8px; 
+    }
+  
+  #searchProjects {
+    width: 170px; 
+    padding: 5px 5px 5px 30px; 
+    }
+  #searchProjects::placeholder {
+    font-size: 14px; 
+    line-height: normal;
+    color: #aaa; 
+    }
+  .btn-create-project {
+    padding: 5px 8px; 
+    font-size: 10px; 
+    margin-top: 0;
+    margin-left: 5px; 
+    width: 100px;
+    height: 28px;
+    }
+  
+  .menu-icons ul {
+    flex: 0 0 auto; 
+    }
+  
+  .menu-icons img {
+    width: 20px; 
+    height: auto; 
+    }
+  
+    
+  .edit-btn {
+    padding: 5px 8px; 
+    font-size: 12px; 
+  }
+    
+  .card-container .card {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    }
+  
+  .table-controls {
+    justify-content: space-between; 
+    padding: 10px 20px; /* Reduced padding for smaller screen size */
+    }
+    
+  .entries-info {
+    font-size: 12px; /* Reduce font size to fit smaller screens */
+    }
+    
+  .table-pagination {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of pagination elements */
+    }
+    
+  .table-pagination a {
+    margin: 0 2px; /* Reduce space between pagination links */
+    font-size: 12px; /* Reduce font size for pagination links */
+    }
+    
+  .table-controls span {
+    margin: 0 4px; /* Adjust margin around ellipsis or other spans */
+    }
+    
+  
+  }
+  
+  
+  @media only screen and (max-width: 375px) {
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand-logo img {
+        max-width: 80px; 
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+    .megadropbtn {
+        font-size: 12px; 
+        padding: 10px 0; 
+    }
+    .nav-search,
+    .nav-items i.fas.fa-moon,
+    .nav-items img.flag {
+        display: none;
+    }
+    .user-dropdown {
+        position: relative; 
+        margin-right: 20px; 
+    }
+    .user-dropdown .user-button {
+        width: 10px; 
+        height: 10px; 
+        padding: 10px; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+  
+  .submenu-container {
+    justify-content: space-between; 
+    padding: 0 20px !important; 
+    }
+  
+  .submenu-title {
+    margin-right: 40px; 
+    }
+  
+  .submenu-title span {
+    font-size: 12px;
+    padding-right: 0; 
+    }
+  
+  .submenu-list {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: nowrap; 
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    }
+  
+  .submenu-list li {
+    padding: 0 5px; 
+    flex: 1; 
+    justify-content: space-between; 
+    }
+  
+  .submenu-list li a {
+    font-size: 12px;
+    white-space: nowrap;
+    }
+  
+  .submenu-actions {
+    padding: 0; 
+    }
+  
+  .submenu-actions button {
+    font-size: 12px; 
+    padding: 5px; 
+    margin: 0; 
+    white-space: nowrap; 
+    }
+  
+  .submenu-actions .fa-angle-down {
+    padding-left: 5px; 
+    font-size: 0.7rem; 
+    }
+  
+  .projects-link {
+    display: inline-block; 
+    min-width: 50px; 
+    text-align: center; 
+    margin-right: 10px; 
+    }
+  
+  .project-search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 5px; 
+    }
+  
+  .search-box {
+    flex-grow: 1; 
+    margin-top: 0; 
+    margin-right: 5px; 
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 10px 8px; 
+    }
+  
+  #searchProjects {
+    width: 170px; 
+    padding: 5px 5px 5px 30px; 
+    }
+  
+  #searchProjects::placeholder {
+    font-size: 14px; 
+    line-height: normal;
+    color: #aaa; 
+    }
+  
+  .btn-create-project {
+    padding: 5px 8px; 
+    font-size: 10px; 
+    margin-top: 0;
+    margin-left: 5px; 
+    width: 100px;
+    height: 28px;
+    }
+  
+  .menu-icons ul {
+    flex: 0 0 auto; 
+    }
+  
+  .menu-icons img {
+    width: 20px; 
+    height: auto; 
+    }
+  
+    
+  .edit-btn {
+    padding: 5px 8px; 
+    font-size: 12px; 
+  }
+  
+  .table-controls {
+    justify-content: space-between; 
+    padding: 10px 20px; 
+  }
+  
+  .entries-info {
+    font-size: 12px; 
+  }
+  
+  .table-pagination {
+    display: flex;
+    flex-wrap: nowrap; 
+  }
+  
+  .table-pagination a {
+    margin: 0 2px; 
+    font-size: 12px; 
+  }
+  
+  .table-controls span {
+    margin: 0 4px; 
+  }
+  
+  
+  }
+  
+  /* Mobile Devices - Medium Phones */
+  @media only screen and (min-width: 322px) and (max-width: 425px) {
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand-logo img {
+        max-width: 80px; 
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+    .megadropbtn {
+        font-size: 12px; 
+        padding: 10px 0; 
+    }
+    .nav-search,
+    .nav-items i.fas.fa-moon,
+    .nav-items img.flag {
+        display: none;
+    }
+    .user-dropdown {
+        position: relative; 
+        margin-right: 20px; 
+    }
+    .user-dropdown .user-button {
+        width: 10px; 
+        height: 10px; 
+        padding: 10px; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+  
+  
+    .submenu-container {
+    justify-content: space-between; /* Adjust the space between elements */
+    padding: 0 20px !important; 
+    }
+  
+  .submenu-title {
+    margin-right: 40px; /* Add some space to the right of the title */
+    }
+  
+  .submenu-title span {
+    font-size: 12px; /* Reduce font size */
+    padding-right: 0; /* Remove padding */
+    }
+  
+  .submenu-list {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure list uses the full width */
+    }
+  
+  .submenu-list li {
+    padding: 0 5px; /* Reduce padding between list items */
+    flex: 1; /* Allow the list to fill the available space */
+    justify-content: space-between; /* Space out the links if there's room */
+    }
+  
+  .submenu-list li a {
+    font-size: 12px; /* Reduce font size */
+    white-space: nowrap; /* Prevent text wrapping */
+    }
+  
+  .submenu-actions {
+    padding: 0; /* Remove padding */
+    }
+  
+  .submenu-actions button {
+    font-size: 12px; /* Reduce font size */
+    padding: 5px; /* Reduce padding */
+    margin: 0; /* Remove margin */
+    white-space: nowrap; /* Prevent text wrapping */
+    }
+  
+  .submenu-actions .fa-angle-down {
+    padding-left: 5px; /* Reduce space after text */
+    font-size: 0.7rem; /* Reduce icon size */
+    }
+  
+  .projects-link {
+    display: inline-block; /* Or 'block', depending on your design */
+    min-width: 50px; /* Adjust as needed */
+    text-align: center; /* Center the text if there's space */
+    margin-right: 10px; /* Ensure some space on the right */
+    }
+  
+    .project-search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 5px; 
+    }
+  
+  .search-box {
+    flex-grow: 1; 
+    margin-top: 0; 
+    margin-right: 5px; 
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 10px 8px; 
+    }
+  
+  #searchProjects {
+    width: 170px; 
+    padding: 5px 5px 5px 30px; 
+    }
+  #searchProjects::placeholder {
+    font-size: 14px; 
+    line-height: normal;
+    color: #aaa; 
+    }
+  .btn-create-project {
+    padding: 5px 8px; 
+    font-size: 10px; 
+    margin-top: 0;
+    margin-left: 5px; 
+    width: 100px;
+    height: 28px;
+    }
+  
+  .menu-icons ul {
+    flex: 0 0 auto; 
+    }
+  
+  .menu-icons img {
+    width: 20px; 
+    height: auto; 
+    }
+  
+    
+  .edit-btn {
+    padding: 5px 8px; 
+    font-size: 12px; 
+  }
+  
+  .card-container .card {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .table-controls {
+    justify-content: space-between; 
+    padding: 10px 20px; /* Reduced padding for smaller screen size */
+  }
+  
+  .entries-info {
+    font-size: 12px; /* Reduce font size to fit smaller screens */
+  }
+  
+  .table-pagination {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of pagination elements */
+  }
+  
+  .table-pagination a {
+    margin: 0 2px; /* Reduce space between pagination links */
+    font-size: 12px; /* Reduce font size for pagination links */
+  }
+  
+  .table-controls span {
+    margin: 0 4px; /* Adjust margin around ellipsis or other spans */
+  }
+  
+  
+  }
+  
+  
+  /* Mobile Devices - Large Phones */
+  @media only screen and (min-width: 426px) and (max-width: 650px) {
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand-logo img {
+        max-width: 80px; 
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+    .megadropbtn {
+        font-size: 12px; 
+        padding: 10px 0; 
+    }
+    .nav-search,
+    .nav-items i.fas.fa-moon,
+    .nav-items img.flag {
+        display: none;
+    }
+    .user-dropdown {
+        position: relative; 
+        margin-right: 20px; 
+    }
+    .user-dropdown .user-button {
+        width: 10px; 
+        height: 10px; 
+        padding: 10px; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+  
+  
+    .submenu-container {
+    justify-content: space-between; /* Adjust the space between elements */
+    padding: 0 20px !important; 
+    }
+  
+  .submenu-title {
+    margin-right: 40px; /* Add some space to the right of the title */
+    }
+  
+  .submenu-title span {
+    font-size: 12px; /* Reduce font size */
+    padding-right: 0; /* Remove padding */
+    }
+  
+  .submenu-list {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure list uses the full width */
+    }
+  
+  .submenu-list li {
+    padding: 0 5px; /* Reduce padding between list items */
+    flex: 1; /* Allow the list to fill the available space */
+    justify-content: space-between; /* Space out the links if there's room */
+    }
+  
+  .submenu-list li a {
+    font-size: 12px; /* Reduce font size */
+    white-space: nowrap; /* Prevent text wrapping */
+    }
+  
+  .submenu-actions {
+    padding: 0; /* Remove padding */
+    }
+  
+  .submenu-actions button {
+    font-size: 12px; /* Reduce font size */
+    padding: 5px; /* Reduce padding */
+    margin: 0; /* Remove margin */
+    white-space: nowrap; /* Prevent text wrapping */
+    }
+  
+  .submenu-actions .fa-angle-down {
+    padding-left: 5px; /* Reduce space after text */
+    font-size: 0.7rem; /* Reduce icon size */
+    }
+  
+  .projects-link {
+    display: inline-block; /* Or 'block', depending on your design */
+    min-width: 50px; /* Adjust as needed */
+    text-align: center; /* Center the text if there's space */
+    margin-right: 10px; /* Ensure some space on the right */
+    }
+  
+    .project-search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 5px; 
+    }
+  
+  .search-box {
+    flex-grow: 1; 
+    margin-top: 0; 
+    margin-right: 5px; 
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 10px 8px; 
+    }
+  
+  #searchProjects {
+    width: 170px; 
+    padding: 5px 5px 5px 30px; 
+    }
+  #searchProjects::placeholder {
+    font-size: 14px; 
+    line-height: normal;
+    color: #aaa; 
+    }
+  .btn-create-project {
+    padding: 5px 8px; 
+    font-size: 10px; 
+    margin-top: 0;
+    margin-left: 5px; 
+    width: 100px;
+    height: 28px;
+    }
+  
+  .menu-icons ul {
+    flex: 0 0 auto; 
+    }
+  
+  .menu-icons img {
+    width: 20px; 
+    height: auto; 
+    }
+  
+    
+  .edit-btn {
+    padding: 5px 8px; 
+    font-size: 12px; 
+  }
+    
+  .card-container .card {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .table-controls {
+    justify-content: space-between; 
+    padding: 10px 20px; /* Reduced padding for smaller screen size */
+  }
+  
+  .entries-info {
+    font-size: 12px; /* Reduce font size to fit smaller screens */
+  }
+  
+  .table-pagination {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of pagination elements */
+  }
+  
+  .table-pagination a {
+    margin: 0 2px; /* Reduce space between pagination links */
+    font-size: 12px; /* Reduce font size for pagination links */
+  }
+  
+  .table-controls span {
+    margin: 0 4px; /* Adjust margin around ellipsis or other spans */
+  }
+  
+  }
+  
+  
+  /* Tablets and Small Devices */
+  @media only screen and (min-width: 651px) and (max-width: 700px) {
+  
+  .card-container .card {
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  .project-search-section {
+    justify-content: space-around; /* Adjust alignment for smaller tablet screens */
+  }
+  .search-box {
+    display: block; /* Show search box */
+  }
+  .search-box input[type="search"] {
+    width: auto; /* Adjust width of search input */
+  }
+  .btn-create-project {
+    display: block; /* Show create project button */
+    padding: 8px 16px; /* Reduce padding */
+    font-size: 14px; /* Reduce font size */
+  }
+  .menu-icons ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  }
+  
+  
+  /* Medium Tablets */
+  @media only screen and (min-width: 701px) and (max-width: 768px) {
+  .card-container .card {
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  .project-search-section {
+    justify-content: space-around; /* Adjust alignment for smaller tablet screens */
+  }
+  .search-box {
+    display: block; /* Show search box */
+  }
+  .search-box input[type="search"] {
+    width: auto; /* Adjust width of search input */
+  }
+  .btn-create-project {
+    display: block; /* Show create project button */
+    padding: 8px 16px; /* Reduce padding */
+    font-size: 14px; /* Reduce font size */
+  }
+  .menu-icons ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  
+  }
+  
+  
+  /* Large Tablets and Small Laptops */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    /* Adjustments for header height if needed */
+    height: 90px; /* You can adjust this value as per your design */
+  }
+    
+  .nav-container {
+    /* Adjust spacing and alignment */
+    justify-content: space-between;
+    height: 90px; /* Match with the header height if adjusted */
+  }
+    
+  .nav-menu {
+    /* Reduce space between menu items */
+    justify-content: space-between;
+  }
+    
+  #menu-link{
+    font-size: 16px;
+  }
+    
+  .nav-items img.flag,
+  .nav-items i.fas.fa-moon,
+  .nav-items img.user {
+    /* Reduce icon sizes for smaller screens */
+    width: 25px;
+    height: 25px;
+  }
+    
+  .nav-items {
+    /* Reduce margins around icons for smaller screens */
+    margin-right: 10px;
+  }
+    
+  .brand-logo img {
+    /* Reduce logo size if needed */
+    width: auto; /* Adjust as necessary */
+    height: 50px; /* Adjust as necessary */
+  }
+    
+  .nav-search input {
+    /* Adjust width of search input for smaller screens */
+    width: 200px; /* Adjust as necessary */
+  }
+    
+  .dropdown {
+    /* Adjust dropdown for smaller screens */
+    width: 820px; /* Match with the device width */
+    left: 0;
+    margin-left: 0; /* Reset the margin if it's not necessary */
+  }
+  
+  .card-container .card {
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  .project-search-section {
+    justify-content: space-around; /* Adjust alignment for smaller tablet screens */
+  }
+  .search-box {
+    display: block; /* Show search box */
+  }
+  .search-box input[type="search"] {
+    width: auto; /* Adjust width of search input */
+  }
+  .btn-create-project {
+    display: block; /* Show create project button */
+    padding: 8px 16px; /* Reduce padding */
+    font-size: 14px; /* Reduce font size */
+  }
+  .menu-icons ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  
+  }
+  
+  
+  /* Small Laptops */
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .card-container .card {
+    flex-basis: calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  .project-search-section {
+    justify-content: space-around; /* Adjust alignment for smaller tablet screens */
+  }
+  .search-box {
+    display: block; /* Show search box */
+  }
+  .search-box input[type="search"] {
+    width: auto; /* Adjust width of search input */
+  }
+  .btn-create-project {
+    display: block; /* Show create project button */
+    padding: 8px 16px; /* Reduce padding */
+    font-size: 14px; /* Reduce font size */
+  }
+  .menu-icons ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  }
+  
+  
+  /* Medium Laptops and Desktops */
+  @media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  .card-container .card {
+    flex-basis: calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  .project-search-section {
+    justify-content: space-around; /* Adjust alignment for smaller tablet screens */
+  }
+  .search-box {
+    display: block; /* Show search box */
+  }
+  .search-box input[type="search"] {
+    width: auto; /* Adjust width of search input */
+  }
+  .btn-create-project {
+    display: block; /* Show create project button */
+    padding: 8px 16px; /* Reduce padding */
+    font-size: 14px; /* Reduce font size */
+  }
+  .menu-icons ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  }
+  
+  
+  /* Large Desktops */
+  @media only screen and (min-width: 1441px) and (max-width: 2560px) {
+  .card-container .card {
+    flex-basis: calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  }
+  
+  
+  /* 4K Screens */
+  @media only screen and (min-width: 2561px) {
+  .card-container .card {
+    flex-basis: calc(25% - 20px); /* If you want to show more cards in a row on very large screens */
+    max-width: calc(25% - 20px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  }
+  
+  
+  /* Ipad Mini */
+@media only screen and (width: 768px) and (height: 1024px) {
+
+    /* Reduce size and margin of the search bar */
+    .nav-search {
+      margin-left: 20px; /* Adjust the left margin to fit the screen */
+    }
+  
+    .nav-search input[type="search"] {
+      width: 180px; /* Reduce the width of the search input */
+    }
+  
+    /* Adjust the size of icons and ensure they fit on the screen */
+    .nav-items img.flag,
+    .nav-items i.fas.fa-moon,
+    .nav-items img.user {
+      width: 30px; /* Reduce the icon size */
+      height: 30px; /* Reduce the icon size */
+      margin-right: 10px; /* Reduce the space between icons */
+    }
+  
+    /* Adjust user-dropdown button */
+    .user-dropdown .user-button {
+      width: 30px; /* Match the size with the icon adjustments above */
+      height: 30px; /* Match the size with the icon adjustments above */
+    }
+  
+    /* Adjust the layout of nav items to ensure proper spacing */
+    .nav-items {
+      display: flex;
+      justify-content: flex-end; /* Align items to the end */
+      align-items: center; /* Center items vertically */
+      padding-right: 20px; /* Add padding to the right */
+    }
+  
+    /* Additional responsive adjustments for cards */
+    .card-container .card {
+      flex-basis: calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+  
+  
+    .menu-icons ul {
+      justify-content: flex-end; /* Align menu icons to the right */
+    }
+  }
+  
+  /* Ipad Pro */
+  @media only screen and (width: 1024px) and (height: 1366px) {
+  
+    /* Reduce size and margin of the search bar */
+    .nav-search {
+        margin-left: 20px; /* Adjust the left margin to fit the screen */
+      }
+    
+      .nav-search input[type="search"] {
+        width: 180px; /* Reduce the width of the search input */
+      }
+    
+      /* Adjust the size of icons and ensure they fit on the screen */
+      .nav-items img.flag,
+      .nav-items i.fas.fa-moon,
+      .nav-items img.user {
+        width: 30px; /* Reduce the icon size */
+        height: 30px; /* Reduce the icon size */
+        margin-right: 10px; /* Reduce the space between icons */
+      }
+    
+      /* Adjust user-dropdown button */
+      .user-dropdown .user-button {
+        width: 30px; /* Match the size with the icon adjustments above */
+        height: 30px; /* Match the size with the icon adjustments above */
+      }
+    
+      /* Adjust the layout of nav items to ensure proper spacing */
+      .nav-items {
+        display: flex;
+        justify-content: flex-end; /* Align items to the end */
+        align-items: center; /* Center items vertically */
+        padding-right: 20px; /* Add padding to the right */
+      }
+    
+      /* Additional responsive adjustments for cards */
+      .card-container .card {
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    
+    
+      .menu-icons ul {
+        justify-content: flex-end; /* Align menu icons to the right */
+      }
+    }
+  
+  /* Ipad Air */
+  @media only screen and (width: 820px) and (height: 1180px) {
+ 
+    /* Reduce size and margin of the search bar */
+    .nav-search {
+        margin-left: 20px; /* Adjust the left margin to fit the screen */
+      }
+    
+      .nav-search input[type="search"] {
+        width: 180px; /* Reduce the width of the search input */
+      }
+    
+      /* Adjust the size of icons and ensure they fit on the screen */
+      .nav-items img.flag,
+      .nav-items i.fas.fa-moon,
+      .nav-items img.user {
+        width: 30px; /* Reduce the icon size */
+        height: 30px; /* Reduce the icon size */
+        margin-right: 10px; /* Reduce the space between icons */
+      }
+    
+      /* Adjust user-dropdown button */
+      .user-dropdown .user-button {
+        width: 30px; /* Match the size with the icon adjustments above */
+        height: 30px; /* Match the size with the icon adjustments above */
+      }
+    
+      /* Adjust the layout of nav items to ensure proper spacing */
+      .nav-items {
+        display: flex;
+        justify-content: flex-end; /* Align items to the end */
+        align-items: center; /* Center items vertically */
+        padding-right: 20px; /* Add padding to the right */
+      }
+    
+      /* Additional responsive adjustments for cards */
+      .card-container .card {
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    
+    
+      .menu-icons ul {
+        justify-content: flex-end; /* Align menu icons to the right */
+      }
+    }
+  
+  
+  /* Mobile Devices */
+  @media only screen and (max-width: 767px) {
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand-logo img {
+        max-width: 80px; 
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+    .megadropbtn {
+        font-size: 12px; 
+        padding: 10px 0; 
+    }
+    .nav-search,
+    .nav-items i.fas.fa-moon,
+    .nav-items img.flag {
+        display: none;
+    }
+    .user-dropdown {
+        position: relative; 
+        margin-right: 20px; 
+    }
+    .user-dropdown .user-button {
+        width: 10px; 
+        height: 10px; 
+        padding: 10px; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+  
+  .card-container .card {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  }
+  
+  
+  /* Tablets */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    /* Reduce size and margin of the search bar */
+    .nav-search {
+        margin-left: 20px; /* Adjust the left margin to fit the screen */
+      }
+    
+      .nav-search input[type="search"] {
+        width: 180px; /* Reduce the width of the search input */
+      }
+    
+      /* Adjust the size of icons and ensure they fit on the screen */
+      .nav-items img.flag,
+      .nav-items i.fas.fa-moon,
+      .nav-items img.user {
+        width: 30px; /* Reduce the icon size */
+        height: 30px; /* Reduce the icon size */
+        margin-right: 10px; /* Reduce the space between icons */
+      }
+    
+      /* Adjust user-dropdown button */
+      .user-dropdown .user-button {
+        width: 30px; /* Match the size with the icon adjustments above */
+        height: 30px; /* Match the size with the icon adjustments above */
+      }
+    
+      /* Adjust the layout of nav items to ensure proper spacing */
+      .nav-items {
+        display: flex;
+        justify-content: flex-end; /* Align items to the end */
+        align-items: center; /* Center items vertically */
+        padding-right: 20px; /* Add padding to the right */
+      }
+    
+      /* Additional responsive adjustments for cards */
+      .card-container .card {
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    
+    
+      .menu-icons ul {
+        justify-content: flex-end; /* Align menu icons to the right */
+      }
+  }
+  
+  /* Small desktops and laptops */
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+      .menu-icons ul {
+        justify-content: flex-end; /* Align menu icons to the right */
+      }
+  }
+    
+  /* Large screens */
+  @media only screen and (min-width: 1281px) {
+    
+      .menu-icons ul {
+        justify-content: flex-end; /* Align menu icons to the right */
+      }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .brand-logo img {
+        max-width: 80px; 
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+    .megadropbtn {
+        font-size: 12px; 
+        padding: 10px 0; 
+    }
+    .nav-search,
+    .nav-items i.fas.fa-moon,
+    .nav-items img.flag {
+        display: none;
+    }
+    .user-dropdown {
+        position: relative; 
+        margin-right: 20px; 
+    }
+    .user-dropdown .user-button {
+        width: 10px; 
+        height: 10px; 
+        padding: 10px; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+  
+  .submenu-container {
+    padding: 0 10px; 
+  }
+  
+  .submenu-title span {
+    font-size: 18px; 
+    padding-right: 10px; 
+  }
+  
+  .submenu-list li {
+    padding: 0 10px; 
+  }
+  
+  .submenu-list li a {
+    font-size: 12px; 
+  }
+  
+  .submenu-actions {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .submenu-actions button {
+    padding: 5px 10px; 
+    font-size: 12px; 
+    margin-bottom: 5px; 
+  }
+  
+  .submenu-actions .fa-angle-down {
+    font-size: 0.8rem; 
+  }
+  
+  .dropdown-content {
+    right: 0; 
+    left: auto; 
+  }
+  }
+  
+  
+  
+  

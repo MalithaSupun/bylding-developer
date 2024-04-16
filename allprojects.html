@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/allprojects.css" />
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="brand-logo">
+                <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo" />
+            </div>
+            <div class="dropdown">
+                <button class="megadropbtn">
+                    Company Tools
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="mega-dropdown-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3>Core Tools</h3>
+                            <a href="#">Alters</a>
+                            <a href="#">Company</a>
+                            <a href="#">Sub Company</a>
+                        </div>
+                        <div class="column">
+                            <h3>Projects</h3>
+                            <a href="#">Project A</a>
+                            <a href="#">Project B</a>
+                        </div>
+                        <div class="column">
+                            <h3>User Management</h3>
+                            <a href="#">User</a>
+                            <a href="#">Company Details</a>
+                            <a href="#">User Time Off</a>
+                            <a href="#">User Role Setting</a>
+                        </div>
+                        <div class="column">
+                            <h3>Master</h3>
+                            <a href="#">Country</a>
+                            <a href="#">State</a>
+                            <a href="#">City</a>
+                            <a href="#">Leave Category</a>
+                            <a href="#">Job Site State</a>
+                            <a href="#">Alert Type</a>
+                            <a href="#">Bid Type</a>
+                            <a href="#">Project Type</a>
+                            <a href="#">Lead Source</a>
+                            <a href="#">Change Order Reason</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add the search bar next to the dropdown -->
+            <div class="nav-search">
+                <i class="fas fa-search"></i>
+                <input type="search" id="search" placeholder="Search" />
+            </div>
+
+            <!-- Add the icons and user profile dropdown -->
+            <div class="nav-items">
+                <img src="images/image-removebg-preview (6) 1.png" alt="USA Flag" class="flag" />
+                <i class="fas fa-moon"></i>
+                <div class="user-dropdown">
+                    <button class="user-button" onclick="toggleDropdown('userDropdownMenu')">
+                        <img src="images/image 11.png" alt="User" class="user" />
+                    </button>
+                    <div class="dropdown-content" id="userDropdownMenu">
+                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                        <a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Log Out</a>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <!-- Second section (Submenu) -->
+    <div class="submenu">
+        <div class="submenu-container">
+            <!-- PROJECTS title -->
+            <div class="submenu-title">
+                <span>PROJECTS</span>
+            </div>
+
+            <ul class="submenu-list">
+                <li><a href="projectsNew.html" class="projects-link">Projects</a></li>
+                <li><a href="#" class="jobs-link">Job Sites</a></li>
+            </ul>
+            <div class="submenu-actions">
+                <button onclick="toggleDropdown('myDropdown')" class="dropbtn">Export<i class="fa fa-angle-down"
+                        aria-hidden="true"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">PDF</a>
+                    <a href="#">CSV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Third section: Search Projects -->
+    <div class="project-search-section">
+        <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="search" id="searchProjects" placeholder="Search Projects">
+        </div>
+        <div class="project-view">
+            <button class="btn-create-project">+ Create Project</button>
+        </div>
+        <div class="menu-icons">
+            <ul>
+                <li>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <i class="fa fa-th-large" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Fourth section: Table Controls -->
+    <div class="table-controls">
+        <div class="entries-info">Showing 1 to 1 of 1 entries</div>
+        <div class="table-pagination">
+            <a href="#">&lt;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <span>...</span>
+            <a href="#">12</a>
+            <a href="#">&gt;</a>
+        </div>
+    </div>
+
+    <!-- Fifth section: Project cards -->
+
+    <div class="card-container">
+        <div class="card">
+            <img src="images/image 16.png" alt="Logo" class="card-logo">
+            <div class="card-info">
+                <h4 class="card-title">24-0002</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="card-location">United States</p>
+                <button class="card-status inactive">Inactive</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/image 17.png" alt="Logo" class="card-logo">
+            <div class="card-info">
+                <h4 class="card-title">24-0002</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="card-location">United States</p>
+                <button class="card-status inactive">Inactive</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/image 19.png" alt="Logo" class="card-logo">
+            <div class="card-info">
+                <h4 class="card-title">24-0002</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="card-location">United States</p>
+                <button class="card-status inactive">Inactive</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/image 21.png" alt="Logo" class="card-logo">
+            <div class="card-info">
+                <h4 class="card-title">24-0002</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="card-location">United States</p>
+                <button class="card-status inactive">Inactive</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/image 16.png" alt="Logo" class="card-logo">
+            <div class="card-info">
+                <h4 class="card-title">24-0002</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="card-location">United States</p>
+                <button class="card-status inactive">Inactive</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/image 17.png" alt="Logo" class="card-logo">
+            <div class="card-info">
+                <h4 class="card-title">24-0002</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="card-location">United States</p>
+                <button class="card-status inactive">Inactive</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/image 19.png" alt="Logo" class="card-logo">
+            <div class="card-info">
+                <h4 class="card-title">24-0002</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="card-location">United States</p>
+                <button class="card-status inactive">Inactive</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/image 19.png" alt="Logo" class="card-logo">
+            <div class="card-info">
+                <h4 class="card-title">24-0002</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="card-location">United States</p>
+                <button class="card-status inactive">Inactive</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/image 21.png" alt="Logo" class="card-logo">
+            <div class="card-info">
+                <h4 class="card-title">24-0002</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="card-location">United States</p>
+                <button class="card-status inactive">Inactive</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+
+    <script>
+        function toggleDropdown(id) {
+            var dropdown = document.getElementById(id);
+            dropdown.classList.toggle("show");
+        }
+
+        // To prevent dropdowns from closing immediately when they are opened
+        window.onclick = function (event) {
+            if (!event.target.matches('.user-button, .user-button *') &&
+                !event.target.matches('.dropbtn, .dropbtn *')) {
+                var dropdowns = document.getElementsByClassName('dropdown-content');
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

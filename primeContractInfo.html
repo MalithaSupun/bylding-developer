@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Contract Info</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/primeContractInfo.css" />
+
+
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="brand-logo">
+        <img src="assets/Logo.png" alt="Company Logo" class="byldinglogo" />
+      </div>
+      <div class="dropdown">
+        <button class="megadropbtn">
+          Project Tools
+          <i class="fa fa-angle-down"></i>
+        </button>
+        <div class="mega-dropdown-content">
+          <div class="row">
+            <div class="column">
+              <h3>Core Tools</h3>
+              <a href="#">Home</a>
+            </div>
+            <div class="column">
+              <h3>Projects Management</h3>
+              <a href="#">RFI</a>
+              <a href="#">Submittals</a>
+              <a href="#">Transmittals</a>
+              <a href="#">Meetings</a>
+              <a href="#">Incidents</a>
+              <a href="#">Punch List</a>
+              <a href="#">Daily Log</a>
+              <a href="#">Bidding</a>
+
+            </div>
+            <div class="column">
+              <h3>Financial Management</h3>
+              <a href="#">Prime Contact</a>
+              <a href="#">Prime Contact SOV</a>
+              <a href="#">Schedule</a>
+              <a href="#">Sub-Contacts</a>
+              <a href="#">Budget</a>
+              <a href="#">Change Order</a>
+              <a href="#">Invoices</a>
+              <a href="#">Payments</a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Add the search bar next to the dropdown -->
+      <div class="nav-search">
+        <i class="fas fa-search"></i>
+        <input type="search" id="search" placeholder="Search" />
+      </div>
+
+      <!-- Add the icons and user profile dropdown -->
+      <div class="nav-items">
+        <img src="images/image-removebg-preview (6) 1.png" alt="USA Flag" class="flag" />
+        <i class="fas fa-moon"></i>
+        <div class="user-dropdown">
+          <button class="user-button" onclick="toggleDropdown('userDropdownMenu')">
+            <img src="images/image 11.png" alt="User" class="user" />
+          </button>
+          <div class="dropdown-content" id="userDropdownMenu">
+            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+            <a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Log Out</a>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <!-- Second section (Submenu) -->
+  <div class="submenu">
+    <div class="submenu-container">
+      <!-- PROJECTS title -->
+      <div class="submenu-title">
+        <span>PROJECT 001</span>
+      </div>
+
+      <ul class="submenu-list">
+        <li><a href="#" class="projects-link">Prime Contract</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="containers mt-3 ee">
+    <h2 id="titlemain">Prime Contract Information</h2>
+
+
+
+    <div class="form-container">
+      <div class="left-column">
+        <label for="purchaseOrder">Purchase Order No</label>
+        <input type="text" id="purchaseOrder">
+
+        <label for="retainage">Retainage (%)</label>
+        <input type="text" id="retainage">
+
+        <label for="subCompDate">Substantial Completion Date</label>
+        <input type="text" id="subCompDate">
+
+        <label for="descOfWork">Description of Work</label>
+        <input type="text" id="descOfWork">
+
+        <label for="exclusion">Exclusion</label>
+        <input type="text" id="exclusion">
+
+        <label for="attachments">Attachments</label>
+        <input type="text" id="attachments">
+      </div>
+      <div class="right-column">
+        <label for="agreementTitle">Agreement Title</label>
+        <input type="text" id="agreementTitle">
+
+        <label for="scheduledStartDate">Scheduled Start Date</label>
+        <input type="text" id="scheduledStartDate">
+
+        <label for="finalCompDate">Final Completion Date</label>
+        <input type="text" id="finalCompDate">
+
+        <label for="inclusion">Inclusion</label>
+        <input type="text" id="inclusion">
+
+        <label for="liquidatedDamages">Liquidated Damages</label>
+        <input type="text" id="liquidatedDamages">
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button type="button" class="btn btn-secondary me-2" id="btnCancel">Cancel</button>
+      <button type="submit" class="btn btn-primary" id="btnEdit">Edit</button>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleDropdown(id) {
+      var dropdown = document.getElementById(id);
+      dropdown.classList.toggle("show");
+    }
+
+    // To prevent dropdowns from closing immediately when they are opened
+    window.onclick = function (event) {
+      if (!event.target.matches('.user-button, .user-button *') &&
+        !event.target.matches('.dropbtn, .dropbtn *')) {
+        var dropdowns = document.getElementsByClassName('dropdown-content');
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

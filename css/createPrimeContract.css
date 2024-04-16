@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 0 ; 
+}
+
+body .navbar {
+    /* overflow: hidden; */
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.brand-logo {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 18px;
+    margin-right: 25px;
+    vertical-align: middle;
+}
+
+.dropdown {
+    /* overflow: hidden; */
+    display: inline-block;
+
+}
+
+.dropdown .megadropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.fa-angle-down {
+    color: #000000;
+    padding-left: 10px;
+    align-self: center;
+    font-size: 1rem;
+}
+
+
+.mega-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0067B3;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown:hover .mega-dropdown-content {
+    display: block;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: auto;
+}
+
+.column a {
+    float: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.column h3 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.column h3::after {
+    content: '';
+    display: block;
+    width: 255px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Search Bar */
+.nav-search {
+    position: relative;
+    margin-right: 50px;
+    margin-left: 480px;
+}
+
+.nav-search input {
+    padding-left: 30px;
+    border: 2px solid #DFDEE0;
+    border-radius: 4px;
+    height: 35px;
+    width: 280px;
+    background-color: #DFDEE0;
+    color: rgba(0, 0, 0, 0.42);
+    font-size: 14px;
+    outline: none;
+}
+
+.nav-search .fa-search {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.42);
+    font-size: 13px;
+    pointer-events: none;
+}
+
+/*Nav-Items*/
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+}
+
+
+.nav-items img.flag,
+.nav-items i.fas.fa-moon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.nav-items img.user {
+    width: 50px;
+    height: 50px;
+    background: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 50%;
+    display: block;
+}
+
+.user-button {
+    background: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-dropdown img {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
+
+}
+
+.nav-items i.fas.fa-moon {
+    padding-top: 4px;
+    font-size: 25px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 1 !important;
+    right: 0;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+/* Submenu styles */
+.submenu {
+    background-color: #0000A3;
+    display: flex;
+    justify-content: center;
+    line-height: 60px;
+    margin: 0;
+    border: 1px solid rgba(34, 34, 34, 0.3);
+}
+
+.submenu-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.submenu-title span {
+    font-size: 24px;
+    color: #f8f8f8;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.submenu-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu-list li {
+    padding: 0 20px;
+}
+
+.submenu-list .projects-link {
+    color: #ffffff;
+}
+
+.submenu-list .jobs-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.submenu-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ee {
+    margin: 15px 0px 5px 20px;
+    font-size: 12px;
+}
+
+.project-search-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 0px;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    z-index: 0;
+}
+
+#searchProjects {
+    padding: 10px 10px 10px 35px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-create-project {
+    background-color: #062284;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the button */
+.btn-create-project:hover {
+    background-color: #00397a;
+}
+
+.edit-btn {
+    background-color: #062284;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-btn:hover {
+    background-color: #00397a;
+}
+
+.menu-icons {
+    font-size: 30px;
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
+.menu-icons ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.menu-icons li {
+    margin-right: 20px;
+}
+
+.menu-icons li:last-child {
+    margin-right: 0;
+}
+
+.menu-icons i {
+    font-size: 24px;
+    color: #062284;
+
+}
+
+
+.table-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.form-select {
+    background-color: #EDECED;
+    margin: 0 10px;
+    border: #000000;
+    border-radius: 5px;
+    width: 60px;
+    height: 35px;
+    font-size: 14px;
+}
+
+.entries-info {
+    white-space: nowrap;
+}
+
+.table-pagination {
+    margin-left: auto;
+}
+
+.table-pagination a {
+    text-decoration: none;
+    margin: 0 4px;
+    color: #333;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #0000001C; 
+  }
+  
+  .table thead tr {
+    background-color: #FFFFFF; 
+    height: 50px; 
+    text-align: center;
+  }
+  
+  .table tbody tr:first-child {
+    background-color: #F7F6FE; 
+  }
+  
+  .table tbody tr:nth-child(odd) {
+    background-color: #F7F6FE;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+  }
+  
+  .table td a {
+    display: block; 
+    text-align: center;
+    color: #000; 
+    text-decoration: none; 
+  }
+  
+  .fa-edit {
+    color: blue;
+    margin-right: 10px;
+  }
+  
+  .fa-print {
+    color: green;
+  }
+  
+  .table td {
+    padding: 8px;
+    text-align: center; 
+  }
+  
+  .table tr td:last-child {
+    border-right: 1px solid #0000001C;
+  }
+  
+  .table tr:last-child td {
+    border-bottom: 1px solid #0000001C;
+  }
+  
+  .table thead th {
+    border: none;
+  }
+  
+  .table tbody td {
+    border: none;
+  }
+  
+  
